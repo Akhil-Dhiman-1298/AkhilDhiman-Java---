@@ -88,32 +88,44 @@ import java.util.Scanner;
 //Assignment Number 5
 /*public class Assignment{
     public static void main(String[] args){
+
     Scanner sc=new Scanner(System.in);
+
     int start=sc.nextInt();
     int end=sc.nextInt();
+
     int i,j,temp;
     int digit;
     int pow;
     int sum;
+
     for(i=start;i<=end;i++){
         temp=i;
         pow=1;
         sum=0;
-        while(temp>0){
-            digit=temp%10;
-            pow=1;
-            for(j=1;j<=digit;j++){
-                pow=pow*j;
+
+        if(i==0){
+            sum=1;
+        }
+        else{
+            while(temp>0){
+
+                digit=temp%10;
+                pow=1;
+
+                for(j=1;j<=digit;j++){
+                    pow=pow*j;
+                }
+
+                sum=sum+pow;
+                temp=temp/10;
             }
-            sum=sum+pow;
-            temp=temp/10;
         }
 
         if(sum==i){
             System.out.println(i);
         }
     }
-
-   }
+}
 }*/
 
