@@ -8,10 +8,10 @@ import java.util.Scanner;
    int i;
    for(i=1;i<=n;i++){
     if(i%2==0){
-        System.out.println(i+"->"+" "+"Odd");
+        System.out.println(i+"-> Even");
     }
     else{
-        System.out.println(i+"->"+" "+"Even"); 
+        System.out.println(i+"-> Odd"); 
     }
    }
    } 
